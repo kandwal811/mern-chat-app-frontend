@@ -38,7 +38,7 @@ const ChatProvider = ({ children }) => {
       };
 
       const { data } = await axios.get(
-        `api/user/getnotifications/${user._id}`,
+        `https://chatly-9b08.onrender.com/api/user/getnotifications/${user._id}`,
         config
       );
 
@@ -68,7 +68,7 @@ const ChatProvider = ({ children }) => {
       };
 
       const { data } = await axios.put(
-        "api/user/removenotification",
+        "https://chatly-9b08.onrender.com/api/user/removenotification",
         {
           userId: user._id,
           chatId: chatId,
@@ -106,7 +106,7 @@ const ChatProvider = ({ children }) => {
 
     for (const receiver of receivers) {
       await axios.post(
-        "/api/user/storenotification",
+        "https://chatly-9b08.onrender.com/api/user/storenotification",
         {
           userId: receiver._id,
           messageId: data._id,
