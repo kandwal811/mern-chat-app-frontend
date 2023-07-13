@@ -48,7 +48,7 @@ const Login = () => {
       };
 
       const { data } = await axios.post(
-        "api/user/login",
+        "https://chatly-9b08.onrender.com/api/user/login",
         { email, password },
         config
       );
