@@ -109,7 +109,7 @@ const Signup = () => {
       };
 
       const { data } = await axios.post(
-        "/api/user",
+        "https://chatly-9b08.onrender.com/api/user",
         { name, email, password, pic },
         config
       );
