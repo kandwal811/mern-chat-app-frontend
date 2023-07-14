@@ -58,7 +58,7 @@ const UpdateGroupChatModal = ({ fetchAgain, setFetchAgain, fetchMessages }) => {
       };
 
       const { data } = await axios.put(
-        "/api/chat/groupremove",
+        "https://chatly-9b08.onrender.com/api/chat/groupremove",
         {
           chatId: selectedChat._id,
           userId: userToRemove._id,
@@ -96,7 +96,7 @@ const UpdateGroupChatModal = ({ fetchAgain, setFetchAgain, fetchMessages }) => {
       };
 
       const { data } = await axios.put(
-        "/api/chat/rename",
+        "https://chatly-9b08.onrender.com/api/chat/rename",
         {
           chatId: selectedChat._id,
           chatName: groupChatName,
@@ -138,7 +138,7 @@ const UpdateGroupChatModal = ({ fetchAgain, setFetchAgain, fetchMessages }) => {
         },
       };
 
-      const { data } = await axios.get(`/api/user?search=${search}`, config);
+      const { data } = await axios.get(`https://chatly-9b08.onrender.com/api/user?search=${search}`, config);
       setLoading(false);
       setSearchResults(data);
     } catch (error) {
@@ -177,7 +177,7 @@ const UpdateGroupChatModal = ({ fetchAgain, setFetchAgain, fetchMessages }) => {
       };
 
       const { data } = await axios.put(
-        "/api/chat/groupadd",
+        "https://chatly-9b08.onrender.com/api/chat/groupadd",
         {
           chatId: selectedChat._id,
           userId: userToAdd._id,
