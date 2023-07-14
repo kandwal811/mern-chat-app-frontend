@@ -109,6 +109,11 @@ const MyChats = ({ fetchAgain }) => {
                 borderRadius={"lg"}
                 key={chat._id}
               >
+                  <Text fontWeight={"medium"}>
+                  {!chat.isGroupChat
+                    ? getOtherUser(loggedUser, chat.users)
+                    : chat.chatName}
+                </Text>
               
                 {chat.latestMessage ? (
                   <Text color={selectedChat === chat ? "white" : "GrayText"}>
