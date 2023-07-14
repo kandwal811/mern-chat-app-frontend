@@ -22,8 +22,6 @@ import io from "socket.io-client";
 import Lottie from "react-lottie";
 import animationData from "../animations/typing.json";
 
-// const ENDPOINT = "https://talk-a-tive-production-4ed9.up.railway.app/";
-
 const ENDPOINT = "https://chatly-9b08.onrender.com";
 
 
