@@ -24,7 +24,7 @@ import animationData from "../animations/typing.json";
 
 // const ENDPOINT = "https://talk-a-tive-production-4ed9.up.railway.app/";
 
-const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://chatly-9b08.onrender.com";
 
 
 var socket, selectedChatCompare, lastRoom;
@@ -129,7 +129,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       setLoading(true);
 
       const { data } = await axios.get(
-        `/api/message/${selectedChat._id}`,
+        `https://chatly-9b08.onrender.com/api/message/${selectedChat._id}`,
         config
       );
 
@@ -163,7 +163,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         setNewMessage("");
 
         const { data } = await axios.post(
-          "/api/message",
+          "https://chatly-9b08.onrender.com/api/message",
           {
             content: newMessage,
             chatId: selectedChat._id,
