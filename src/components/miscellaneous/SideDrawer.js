@@ -149,7 +149,7 @@ const SideDrawer = () => {
         </Tooltip>
 
         <Text fontSize="3xl" fontFamily="QuickSand" color="black">
-          Talk-A-Tive
+          Chatly
         </Text>
 
         <div style={{ display: "flex", alignContent: "center" }}>
