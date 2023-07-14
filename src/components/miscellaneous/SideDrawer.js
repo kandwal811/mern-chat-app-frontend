@@ -81,7 +81,7 @@ const SideDrawer = () => {
         },
       };
 
-      const { data } = await axios.get(`/api/user?search=${search}`, config);
+      const { data } = await axios.get(`https://chatly-9b08.onrender.com/api/user?search=${search}`, config);
 
       setLoading(false);
       setSearchResult(data);
