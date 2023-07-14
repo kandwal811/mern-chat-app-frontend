@@ -111,7 +111,8 @@ const MyChats = ({ fetchAgain }) => {
               >
                 <Text fontWeight={"medium"}>
                   {!chat.isGroupChat
-                    ? getOtherUser(loggedUser, chat.users).name : chat.chatName}
+                    ? getOtherUser(loggedUser, chat.users).name
+                    : chat.chatName}
                 </Text>
                 {chat.latestMessage ? (
                   <Text color={selectedChat === chat ? "white" : "GrayText"}>
